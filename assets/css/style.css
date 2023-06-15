@@ -32,3 +32,10 @@ ul {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
 }
+
+#navy>li>a:hover {
+    
+    background-color: #9369f1;
+    border-radius: 10px;
+    
+}
