@@ -15,7 +15,7 @@ function createPersonsdc(array $data, int $limit = 9, $category): void
     // je mets en place une variable permettant d'afficher les images de mes cards
     $i = 2;
 
-    echo '<div class="row justify-content-center">';
+    echo '<div class="row justify-content-center m-0">';
     foreach ($data as $person) {
         if ($person['cat'] == $category) {
             if ($i > $limit) {
@@ -23,9 +23,9 @@ function createPersonsdc(array $data, int $limit = 9, $category): void
             }
 
             echo '<div class="card col-lg-3 col-8 px-0 m-3 text-center">';
-            echo '<img src="../assets/img/' .$person['pic'] . '" class="card-img-top" alt="fakeImage">';
+            echo '<img src="../assets/img/' . $person['pic'] . '" class="card-img-top" alt="fakeImage">';
             echo '<div class="card-body">';
-          echo '<h5 class="card-title text-secondary">' . $person['title'] . '</h5>';
+            echo '<h5 class="card-title text-secondary">' . $person['title'] . '</h5>';
             echo '<p class="card-text">';
             echo '<ul>';
             echo '<li><b>year : </b>' . $person['year'] . '</li>';
@@ -36,7 +36,6 @@ function createPersonsdc(array $data, int $limit = 9, $category): void
             echo '</div>';
             echo '</div>';
         }
-        
     }
     echo '</div>';
 }
